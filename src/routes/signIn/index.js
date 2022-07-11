@@ -1,4 +1,12 @@
-import {signInWithGooglePopup, createUserDocumentFromAuth} from "../../utils/firebase/index"
+import {useEffect} from "react"
+import {getRedirectResult} from "firebase/auth"
+
+import {
+  signInWithGooglePopup, 
+  createUserDocumentFromAuth
+} from "../../utils/firebase/index"
+
+import SignUpForm from "../../components/signUpForm/index"
 
 const SignIn = () => {
   const logGoogleUser = async () => {
@@ -9,7 +17,8 @@ const SignIn = () => {
   return (
     <div>
       <h1>Sign In Page</h1>
-      <button onClick={logGoogleUser}>Sign in here</button>
+      <button onClick={logGoogleUser}>Sign in with Google Pop-up</button>
+      <SignUpForm />
     </div>
   )
 }
