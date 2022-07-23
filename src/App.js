@@ -4,6 +4,7 @@ import Home from "./routes/home/index"
 import Shop from "./routes/shop/index"
 import Authentication from "./routes/authentication/index"
 import Navigation from "./routes/navigation/index"
+import Checkout from "./routes/checkout/index"
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
         <Route index element={<Home />} />
         <Route path="shop" element={<Shop />} />
         <Route path="auth" element={<Authentication />} />
+        <Route path="checkout" element={<Checkout />} />
       </Route>
     </Routes>
   )
