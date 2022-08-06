@@ -56,7 +56,7 @@ export const addCollectionAndDocuments = async (
   })
 
   await batch.commit()
-  console.log('categories added')
+  //console.log('categories added')
 }
 
 export const getCategoriesAndDocuments = async () => {
@@ -90,7 +90,7 @@ export const createUserDocumentFromAuth = async (userAuth, additionalInformation
         ...additionalInformation
       })
     }catch(err){
-      console.log("error creating the user", err.message)
+      console.log("error creating the user"/*, err.message*/)
     }
   }
 
