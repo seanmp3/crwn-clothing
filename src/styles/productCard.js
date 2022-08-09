@@ -4,7 +4,7 @@ export const ProductCartContainer = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
-  height: 350px;
+  height: 400px;
   align-items: center;
   position: relative;
   img {
